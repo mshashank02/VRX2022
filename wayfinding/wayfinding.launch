@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find vrx_gazebo)/launch/wayfinding.launch"/>
+  <include file="$(find wamv_gazebo)/launch/localization_example.launch"/>
+  <include file="$(find gps_goal)/launch/gps_goal.launch"/>
+  <node pkg="vrx_gazebo" type="wayfinding.py" name="wayfinding" output="screen"></node>
+</launch>
